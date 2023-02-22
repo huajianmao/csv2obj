@@ -1,0 +1,36 @@
+plugins {
+  id 'java'
+  id 'checkstyle'
+  id 'application'
+}
+
+group = 'cn.ac.bmi.cloudphr'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+  compileOnly {
+    extendsFrom annotationProcessor
+  }
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compileOnly 'org.projectlombok:lombok:1.18.26'
+  annotationProcessor 'org.projectlombok:lombok:1.18.26'
+
+  testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.13.1'
+  testImplementation 'junit:junit:4.13.2'
+}
+
+checkstyle {
+  toolVersion = '8.39'
+  configFile = rootProject.file('config/checkstyle/checkstyle.xml')
+  configProperties = ["suppressionFile": rootProject.file('config/checkstyle/suppressions.xml')]
+}
+
+mainClassName = "cn.ac.bmi.cloudphr.flat2obj.Runner"
+
