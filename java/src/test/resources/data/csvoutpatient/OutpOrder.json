@@ -1,0 +1,20 @@
+[
+  {
+    "patientId": 10469912,
+    "visitDate": "2014-10-14",
+    "visitNo": 6425,
+    "serialNo": 3913231,
+    "orderedBy": 3108,
+    "doctor": "唐高福",
+    "orderDate": "2014-10-14 01:46:50"
+  },
+  {
+    "patientId": 696,
+    "visitDate": "2014-10-14",
+    "visitNo": 7164,
+    "serialNo": 3913696,
+    "orderedBy": 240101,
+    "doctor": "潘世锦",
+    "orderDate": "2014-10-14 08:21:32"
+  }
+]
